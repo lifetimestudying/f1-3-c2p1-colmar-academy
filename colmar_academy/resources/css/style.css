@@ -1,0 +1,628 @@
+*, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+div.flex-container {
+  display: flex;
+}
+
+img, video {
+  background-color: #d8d8d8;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h4, a {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+/*header*/
+header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 481px) {
+  div.mobile-heading {
+    display: none;
+  }
+}
+
+div.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  height: 32px;
+  width: 100%;
+}
+
+/* title -> logo */
+div.flex-container.logo {
+  height: 55px;
+}
+
+.logo img{
+  width: auto;
+  height: 100%;
+  background-color: inherit;
+}
+
+/* title -> text */
+div.flex-container.title {
+  align-self: center;
+}
+
+header h2 {
+  font-size: 1.75rem;
+}
+
+header h2 strong {
+  color: #c2c2c2;
+  font-weight: normal;
+}
+
+/*navigation*/
+a.item {
+  padding-left: 16px;
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 20px;
+}
+
+/*banner section*/
+section.banner {
+  display: flex;
+  background-color: #d8d8d8;
+}
+
+.banner div.flex-container.main-content {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+div.flex-container.banner-img {
+  width: 60%;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-content h1,
+.banner-content p {
+  padding: 20px 0;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+div.flex-container.banner-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+div.flex-container.banner-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 8px 0;
+  background-color: #4a4a4a;
+}
+
+/*information section*/
+section.information {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.information div.flex-container.main-content {
+  justify-cont: ;ent: space-between;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  padding: 32px 24px;
+}
+
+.information div.flex-container.information-content {
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  padding-top: 16px;
+}
+
+div.flex-container.information-img {
+  width: 100%;
+  height: 100%;
+}
+
+.information-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.information div.flex-container.co-content {
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.information-content div.co-content h2 {
+  padding-bottom: 24px;
+  font-size: 3rem;
+}
+
+.information-content div.co-content p {
+  line-height: 1.5;
+  font-size: 1.48rem;
+  white-space: pre-line;
+}
+
+.information-content div.co-content h3 {
+  padding-top: 32px;
+}
+
+div.flex-container.information-gal {
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  margin-left: 24px;
+  border-left: 1px solid #c2c2c2;
+}
+
+div.flex-container.text-content {
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.text-content h2,
+.text-content h4 {
+  padding-top: 8px;
+}
+
+div.flex-container.text-content h4 {
+  font-weight: normal;
+}
+
+.text-content a {
+  text-decoration: none;
+  padding-top: 8px;
+  color: darkblue;
+}
+
+div.flex-container.gal-content {
+  width: 100%;
+  border-bottom: 1px solid #c2c2c2;
+  flex-direction: row;
+}
+
+div.flex-container.gal-img {
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
+}
+
+.gal-img img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 481px) {
+  img.mobile-img {
+    display: none;
+  }
+
+  /* information -> gal -> guest */
+  div.flex-container.gal-guest {
+    background-color: #d8d8d8;
+  }
+}
+
+/*course section*/
+section.learning-course {
+  display: flex;
+  background-color: #d8d8d8;
+}
+
+.learning-course div.flex-container.main-content {
+  flex-direction: column;
+  padding: 32px 70px;
+  width: 100%;
+}
+
+div.flex-container.heading {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 481px) {
+  div.mobile-course {
+    display: none;
+  }
+}
+
+div.flex-container.course {
+  flex-direction: column;
+  padding: 0 34px;
+  width: 100%;
+  height: 100%;
+}
+
+div.flex-container.course-img {
+  height: auto;
+  width: 100%;
+  background-color: #d8d8d8;
+}
+
+.course-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.course-content {
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 16px;
+  height: 100%;
+}
+
+.course-content a {
+  padding: 8px 0;
+  text-decoration: none;
+  font-weight: normal;
+  color: #c2c2c2;
+  font-size: 1.25rem;
+}
+
+.course-content h3 {
+  font-weight: normal;
+  color: #c2c2c2;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: pre-line;
+  width: 80%;
+  padding-bottom: 27px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.art-description {
+  padding-bottom: 0!important;
+}
+
+.main-courses-first {
+  flex-direction: row;
+  padding: 32px 0;
+}
+
+/* thesis section*/
+section.thesis {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.thesis div.flex-container.main-content {
+  padding: 32px 24px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.thesis .heading {
+  justify-content: center;
+}
+
+div.flex-container.infor-content {
+  padding-top: 32px;
+  width: 100%;
+  height: 100%;
+}
+
+.infor-content div.flex-container.content {
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  padding-right: 24px;
+}
+
+div.flex-container.vid {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 24px;
+}
+
+.vid video {
+  width: 100%;
+  height: 100%;
+}
+
+.infor-content div.flex-container.co-content {
+  flex-direction: column;
+}
+
+.infor-content div.co-content h2 {
+  font-size: 2.5rem;
+}
+
+.infor-content div.co-content p {
+  padding-top: 8px;
+  line-height: 1.5;
+  font-size: 1.35rem;
+  white-space: pre-line;
+}
+
+/* thesis -> gal */
+div.flex-container.thesis-gal {
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+div.gal-img {
+  padding: 16px 16px;
+  width: 35%;
+  height: 100%;
+}
+
+.gal-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.thesis div.gal-content {
+  flex-direction: column;
+  width: 65%;
+  align-self: center;
+  border: none;
+}
+
+.gal-content p {
+  padding: 20px 0;
+  color: #808080;
+}
+
+/* thesis -> gal -> fisma */
+.fisma-gal {
+  background-color: #d8d8d8;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 40px 24px;
+  border-top: 1px solid #c2c2c2;
+}
+
+footer h4 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.terms h4 {
+  padding-left: 20px;
+}
+
+/* mobile stylesheet */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  img {
+    background-color: #ffffff;
+  }
+
+  img.desktop-img {
+    display: none;
+  }
+
+  .heading h1 {
+    font-size: 2.75rem;
+  }
+
+  /* heading */
+  div.main-heading {
+    display: none;
+  }
+
+  .mobile-heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  div.flex-container.mobile-main-heading {
+    width: 100%;
+    justify-content: space-around;
+    align-self: center;
+  }
+
+  .mobile-main-heading a {
+    align-self: center;
+  }
+
+  /* banner section*/
+  .banner div.flex-container.main-content {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-content div.flex-container.banner-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  div.flex-container.banner-content {
+    width: 100%;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+    padding-bottom: 32px;
+  }
+
+  .banner-content p {
+    padding: 0;
+    line-height: 1.4;
+    padding-bottom: 24px;
+  }
+
+  /* information section */
+  .information div.flex-container.main-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  div.flex-container.information-content {
+    display: none;
+  }
+
+  div.flex-container.information-gal {
+    width: 100%;
+    border: none;
+    padding: 16px 16px 32px 16px;
+    margin: 0;
+    height: 100%;
+  }
+
+  div.flex-container.gal-content {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+    padding-bottom: 64px;
+  }
+
+  div.gal-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gal-img img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .gal-content div.flex-container.text-content {
+    padding-left: 16px;
+    width: 100%;
+  }
+
+  .gal-guest {
+    padding-bottom: 0!important;
+  }
+
+  /* course section */
+  .learning-course div.flex-container.main-content {
+    width: 100%;
+    padding: 32px 16px;
+    background-color: #f5f4f5;
+  }
+
+  div.mobile-course {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 16px;
+  }
+
+  div.flex-container.courses {
+    width: 100%;
+    background-color: #d8d8d8;
+    margin-bottom: 8px;
+  }
+
+  div.flex-container.courses a {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  div.flex-container.courses a h2 {
+    font-size: 1.85rem;
+    padding: 16px 16px 24px 16px;
+  }
+
+  div.main-courses-first,
+  div.main-courses-second {
+    display: none;
+  }
+
+  /* thesis section */
+  .thesis div.flex-container.main-content {
+    width: 100%;
+    padding: 0 0 24px 0;
+  }
+
+  .main-content div.flex-container.heading {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  div.flex-container.infor-content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .infor-content div.flex-container.content{
+    width: 100%;
+    padding: 0;
+  }
+
+  .content div.flex-container.co-content {
+    display: none;
+  }
+
+  div.flex-container.thesis-gal {
+    display: none;
+  }
+
+  /* footer */
+  footer {
+    border: none;
+    padding: 16px 16px;
+  }
+
+  footer div.flex-container.terms {
+    display: none;
+  }
+}
